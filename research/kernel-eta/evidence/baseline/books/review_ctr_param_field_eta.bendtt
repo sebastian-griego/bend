@@ -1,0 +1,71 @@
+keep : ∀x0 : ∀x0 : U32 -> U32 -> (Pair -∀x1 : U32 -> U32 -Bool) =
+  λx0 => (.Tuple, (λx1 => (x0 x1), ((.False, ()), ())))
+
+some.qv : ∀x0 : some_7e_T -> (Maybe -.Q1 -some_7e_T) =
+  λx0 => (.Some, (x0, ()))
+
+pair : ∀x0 : ∀x0 : U32 -> U32 -> {(keep λx1 => (x0 x1)) == (.Tuple, (x0, ((.False, ()), ()))) : (Pair -∀x1 : U32 -> U32 -Bool)} =
+  λx0 => {==}
+
+wrap : ∀x0 : ∀x0 : U32 -> U32 -> {(some.qv_1 λx1 => (x0 x1)) == (.Some, (x0, ())) : (Maybe -.Q1 -∀x1 : U32 -> U32)} =
+  λx0 => {==}
+
+some.qv_1 : ∀x0 : ∀x0 : U32 -> U32 -> (Maybe -.Q1 -∀x1 : U32 -> U32) =
+  λx0 => (.Some, (λx1 => (x0 x1), ()))
+
+Maybe.arms : ∀-x0 : <Q0, Q1, Q2> -> ∀-x1 : *(x0) -> ∀x2 : <None, Some> -> *(x0) =
+  λ-x0 => λ-x1 => λ{.None: <()>; λ{.Some: Σx2 : x1 -> <()>; λ{}}}
+
+Maybe : ∀-x0 : <Q0, Q1, Q2> -> ∀-x1 : *(x0) -> *(x0) =
+  λ-x0 => λ-x1 => Σx2 : <None, Some> -> (Maybe.arms -x0 -x1 x2)
+
+Unit.arms : ∀x0 : <Unit> -> *(.Q2) =
+  λ{.Unit: <()>; λ{}}
+
+Unit : *(.Q2) =
+  Σx0 : <Unit> -> (Unit.arms x0)
+
+opaque some_7e_T : *(.Q1) =
+  Unit
+
+Bool.arms : ∀x0 : <False, True> -> *(.Q2) =
+  λ{.False: <()>; λ{.True: <()>; λ{}}}
+
+Bool : *(.Q2) =
+  Σx0 : <False, True> -> (Bool.arms x0)
+
+Sigma.arms : ∀-x0 : <Q0, Q1, Q2> -> ∀-x1 : <Q0, Q1, Q2> -> ∀-x2 : *(x0) -> ∀-x3 : ∀-x3 : x2 -> *(x1) -> ∀x4 : <Tuple> -> *((x0 <&> x1)) =
+  λ-x0 => λ-x1 => λ-x2 => λ-x3 => λ{.Tuple: Σx4 : x2 -> Σx5 : (x3 -x4) -> <()>; λ{}}
+
+Sigma : ∀-x0 : <Q0, Q1, Q2> -> ∀-x1 : <Q0, Q1, Q2> -> ∀-x2 : *(x0) -> ∀-x3 : ∀-x3 : x2 -> *(x1) -> *((x0 <&> x1)) =
+  λ-x0 => λ-x1 => λ-x2 => λ-x3 => Σx4 : <Tuple> -> (Sigma.arms -x0 -x1 -x2 -x3 x4)
+
+Pair : ∀-x0 : *(.Q1) -> ∀-x1 : *(.Q1) -> *(.Q1) =
+  λ-x0 => λ-x1 => (Sigma -.Q1 -.Q1 -x0 -λ-x2 => x1)
+
+U32.arms : ∀x0 : <U32> -> *(.Q2) =
+  λ{.U32: Σx0 : (Word (.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Succ, ((.Zero, ()), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ())), ()))) -> <()>; λ{}}
+
+U32 : *(.Q2) =
+  Σx0 : <U32> -> (U32.arms x0)
+
+Word.Nil.arms : ∀x0 : <WNil> -> *(.Q2) =
+  λ{.WNil: <()>; λ{}}
+
+Word.Nil : *(.Q2) =
+  Σx0 : <WNil> -> (Word.Nil.arms x0)
+
+Word.Con.arms : ∀-x0 : Nat -> ∀x1 : <WCon> -> *(.Q2) =
+  λ-x0 => λ{.WCon: Σx1 : Bool -> Σx2 : (Word x0) -> <()>; λ{}}
+
+Word.Con : ∀-x0 : Nat -> *(.Q2) =
+  λ-x0 => Σx1 : <WCon> -> (Word.Con.arms -x0 x1)
+
+Word : ∀x0 : Nat -> *(.Q2) =
+  λ{(,): λ{.Zero: λ{(): Word.Nil; λ{}}; λ{.Succ: λ{(,): λx0 => λ{(): (Word.Con -x0); λ{}}}; λ{}}}}
+
+Nat.arms : ∀x0 : <Zero, Succ> -> *(.Q2) =
+  λ{.Zero: <()>; λ{.Succ: Σx0 : Nat -> <()>; λ{}}}
+
+Nat : *(.Q2) =
+  Σx0 : <Zero, Succ> -> (Nat.arms x0)

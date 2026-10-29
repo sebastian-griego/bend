@@ -1,0 +1,115 @@
+Required proof interface for a revised BendTT kernel
+2026-10-16
+
+Scope
+
+Preserve the revised checker definitions and all advertised safety guarantees.
+Replace old typing claims with their revised counterparts. Do not keep a second
+checker to obtain safety from the old checker. Retain original runtime reduction
+and the type-independent termination proof.
+
+Original public claims
+
+Claim.sound:
+  Revised.book_check. Accepted books have Revised.WellTyped and Book.Live.
+
+Claim.confluent:
+  Original confluent. Original Pars has a common reduct for each reduction pair.
+  Also retain GlobalDiamond.confluent for canonical erased comparison reduction.
+
+Claim.sr:
+  Revised.sr. Original Par preserves Revised.Typed in all contexts.
+  Keep Revised.pars_sr and Revised.eval_preservation as direct consequences.
+
+Claim.progress:
+  Revised.progress. Empty-context typed terms are values or take original Eval
+  steps, under Revised.WellTyped and Book.Live.
+
+Claim.halts:
+  Original halts. Book.Live, Closed, and Term.Live imply termination under Eval.
+  This claim needs no typing premise and no revised proof.
+
+Claim.empty:
+  Revised.empty_value. A value cannot have the empty enumeration type.
+
+Claim.consistent:
+  Revised.checked_no_empty. A definition found in an accepted book cannot have
+  a declared type joined to Empty. This rules out old conversion to Empty too.
+
+Additional advertised guarantees
+
+ExecutableOrder.join_refl, join_symm, join_trans, join_sub, join_old:
+  Revised equality is an equivalence relation, is stable under raw substitution,
+  and includes old conversion.
+
+EquationBridge.diagnostic_join and diagnostic_substitution_join:
+  Successful finite comparison implies revised equality. That equality survives
+  raw substitution. This is not comparator completeness after substitution.
+
+ExecutableOrder.diagnostic_qge_sound and diagnostic_fits_sound:
+  Executable quantity order and type fitting use the same revised equality.
+  NewFits uses that equality on both sides of its semantic quantity implication.
+
+Revised.typed_sub and typed_inst:
+  Revised typing is stable under well-typed substitution and instantiation.
+
+FullDataSafety.typed_eta_factorization:
+  A comparison reduction from an erased typed term factors into original
+  reduction of that term followed by eta reduction of the erased result.
+
+FullDataSafety.typed_kind_exposure and typed_data_exposure:
+  A formed type equal to a rigid type constructor exposes that constructor by
+  original reduction. These statements have no open simulation premise.
+
+Revised.canon_data:
+  A value of a type formed at Data satisfies the original Data predicate.
+
+TypedValueDataEquality.data_iff_same_type_join:
+  Equal values with the same revised type have the same Data classification.
+
+Revised.trace_preservation, checked_definition_trace_preservation, and
+data_kind_trace_preservation:
+  Original runtime traces preserve the exact revised type. A checked definition
+  keeps its declared type. Runtime evaluation preserves a Data-kind judgment.
+
+Revised.data_results, no_closed_empty, checked_definition_data, and
+checked_data_results:
+  Closed live terms at formed Data types reach Data values with the same type.
+  Closed live terms cannot inhabit Empty. Checked-book forms discharge book
+  formation and liveness premises where their statements specify this.
+
+Candidate.accepted_text_no_empty, if the experiment's text wrapper is retained:
+  Accepted text parses to a book accepted by the proved checker. No definition
+  in that book has a declared type joined to Empty. This theorem does not prove
+  parsing correctness against a separate text specification.
+
+Safe removal candidates
+
+Remove old checker soundness, old typed preservation, old progress, and old
+typed consistency proof paths after their revised counterparts replace them.
+Remove imports and declarations used only for rejected designs, counterexamples,
+or empirical tests. Keep those files in the research evidence package.
+Remove duplicate executable definitions after exact correspondence checks.
+Retain ordinary reduction algebra used by the revised proof and termination.
+
+Required mathematical groups
+
+1. Erasure, substitution, erased reduction, and confluence.
+2. Comparator soundness and coherent semantic quantity fitting.
+3. Revised typing substitution, inversion, and original reduction preservation.
+4. Hereditary head safety, eta-path simulation, and typed factorization.
+5. Data canonical forms, progress, and consistency with original termination.
+
+The source import closure is not a minimum proof size. Declaration pruning must
+follow actual Lean constant dependencies. The result must compile with source
+proofs and an explicit public interface. Do not hide proof terms in generated
+binaries or move proofs outside the allowed file to satisfy its size cap.
+
+Limits
+
+The claims do not prove safe.ts correctness, comparator completeness, an adequate
+fixed fuel bound, source-checker soundness, text-parser correctness, native code
+generation correctness, or runtime performance. Exact quantity-sensitive typing
+is not preserved by arbitrary eta contraction. Keep eta in comparison reduction.
+Erasure retains All, Sig, Tup, and Let quantity tags. Ordinary let reduction
+can still remove a Let tag.

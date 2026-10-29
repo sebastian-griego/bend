@@ -1,0 +1,4 @@
+Unit : *2 = <()>
+From : *1 = ∀+x : Unit -> Unit
+To : *1 = ∀+x : Unit -> Unit
+test : ∀f : From -> To = λf => λ+x => (f +x)

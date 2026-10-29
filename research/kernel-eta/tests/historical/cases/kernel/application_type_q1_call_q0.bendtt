@@ -1,0 +1,3 @@
+Unit : *2 = <()>
+F : *1 = ∀x : Unit -> Unit
+test : ∀f : F -> Unit = λf => (f -())

@@ -1,0 +1,5 @@
+Unit : *2 = <()>
+Handler : *1 = ∀x : Unit -> Unit
+Box : *1 = Σf : Handler -> Unit
+test : ∀-f : Handler -> {(f, ()) == (λx => (f x), ()) : Box} =
+  λ-f => {==}

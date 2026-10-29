@@ -1,0 +1,4 @@
+Unit : *2 = <()>
+Pair : *2 = Σa : Unit -> Unit
+F : *1 = ∀p : Pair -> Unit
+test : {λ{(,): λa => λb => a} == λp => ({λ{(,): λa => λb => a} : F} p) : F} = {==}

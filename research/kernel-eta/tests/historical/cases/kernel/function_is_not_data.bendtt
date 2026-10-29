@@ -1,0 +1,2 @@
+Unit : *2 = <()>
+test : *2 = ∀x : Unit -> Unit

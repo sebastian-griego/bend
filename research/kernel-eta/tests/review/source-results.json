@@ -1,0 +1,198 @@
+[
+  {
+    "stage": "pinned",
+    "id": "issue1623_reuse",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "pinned",
+    "id": "issue1623_direct",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "pinned",
+    "id": "issue1623_original",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "pinned",
+    "id": "issue1623_generic",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "pinned",
+    "id": "issue1623_nat_control",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "pinned",
+    "id": "review_field_argument_helper",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "pinned",
+    "id": "review_unfold_box",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "pinned",
+    "id": "review_unfold_maybe",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "pinned",
+    "id": "review_rewrite_field",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "pinned",
+    "id": "review_eta_equal_fields",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "pinned",
+    "id": "review_named_id",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "pinned",
+    "id": "negative_unrelated_field",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "SOME PROOFS FAIL\nError:\n- expected : Box{f}\n- observed : Box{g}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n4 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n5>|   {==}\n  |   ^^^^\n6 | \n"
+  },
+  {
+    "stage": "pinned",
+    "id": "negative_unrelated_helper",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "SOME PROOFS FAIL\nError:\n- expected : {Box{f} == Box{g} : Box}\n- observed : {Box{f} == Box{f} : Box}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n7 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n8>|   reflexive(Box{f})\n  |   ^^^^^^^^^^^^^^^^^\n9 | \n"
+  },
+  {
+    "stage": "pinned",
+    "id": "review_ctr_param_field_eta",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "current",
+    "id": "issue1623_reuse",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "current",
+    "id": "issue1623_direct",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "current",
+    "id": "issue1623_original",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "current",
+    "id": "issue1623_generic",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "current",
+    "id": "issue1623_nat_control",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "current",
+    "id": "review_field_argument_helper",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "current",
+    "id": "review_unfold_box",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "current",
+    "id": "review_unfold_maybe",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "current",
+    "id": "review_rewrite_field",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "current",
+    "id": "review_eta_equal_fields",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "current",
+    "id": "review_named_id",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  },
+  {
+    "stage": "current",
+    "id": "negative_unrelated_field",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "SOME PROOFS FAIL\nError:\n- expected : Box{f}\n- observed : Box{g}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n4 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n5>|   {==}\n  |   ^^^^\n6 | \n"
+  },
+  {
+    "stage": "current",
+    "id": "negative_unrelated_helper",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "SOME PROOFS FAIL\nError:\n- expected : {Box{f} == Box{g} : Box}\n- observed : {Box{f} == Box{f} : Box}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n7 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n8>|   reflexive(Box{f})\n  |   ^^^^^^^^^^^^^^^^^\n9 | \n"
+  },
+  {
+    "stage": "current",
+    "id": "review_ctr_param_field_eta",
+    "exit": 0,
+    "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,4 @@
+Unit : *2 = <()>
+A : *2 = Σ-x : Unit -> Unit
+B : *2 = Σx : Unit -> Unit
+test : {A == B : *2} = {==}

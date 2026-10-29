@@ -1,0 +1,20 @@
+FB.arms : ∀x0 : <FB> -> *(.Q1) =
+  λ{.FB: Σx0 : ∀x0 : Nat -> Nat -> <()>; λ{}}
+
+FB : *(.Q1) =
+  Σx0 : <FB> -> (FB.arms x0)
+
+id : ∀x0 : Nat -> Nat =
+  λx0 => x0
+
+mk : FB =
+  (.FB, (λx0 => (id x0), ()))
+
+same : {mk == (.FB, (λx0 => (id x0), ())) : FB} =
+  {==}
+
+Nat.arms : ∀x0 : <Zero, Succ> -> *(.Q2) =
+  λ{.Zero: <()>; λ{.Succ: Σx0 : Nat -> <()>; λ{}}}
+
+Nat : *(.Q2) =
+  Σx0 : <Zero, Succ> -> (Nat.arms x0)

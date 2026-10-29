@@ -1,0 +1,20 @@
+rebuild : ∀-x0 : *(.Q1) -> ∀x1 : (Maybe -.Q1 -x0) -> (Maybe -.Q1 -x0) =
+  λ-x0 => λ{(,): λ{.None: λ{(): (.None, ()); λ{}}; λ{.Some: λ{(,): λx1 => λ{(): (.Some, (x1, ())); λ{}}}; λ{}}}}
+
+rebuild_fn : ∀x0 : (Maybe -.Q1 -Nat) -> (Maybe -.Q1 -Nat) =
+  λ{(,): λ{.None: λ{(): (.None, ()); λ{}}; λ{.Some: λ{(,): λx0 => λ{(): (.Some, (x0, ())); λ{}}}; λ{}}}}
+
+same : ∀x0 : (Maybe -.Q1 -Nat) -> {(rebuild_fn x0) == (rebuild -Nat x0) : (Maybe -.Q1 -Nat)} =
+  λ{(,): λ{.None: λ{(): {==}; λ{}}; λ{.Some: λ{(,): λx0 => λ{(): {==}; λ{}}}; λ{}}}}
+
+Nat.arms : ∀x0 : <Zero, Succ> -> *(.Q2) =
+  λ{.Zero: <()>; λ{.Succ: Σx0 : Nat -> <()>; λ{}}}
+
+Nat : *(.Q2) =
+  Σx0 : <Zero, Succ> -> (Nat.arms x0)
+
+Maybe.arms : ∀-x0 : <Q0, Q1, Q2> -> ∀-x1 : *(x0) -> ∀x2 : <None, Some> -> *(x0) =
+  λ-x0 => λ-x1 => λ{.None: <()>; λ{.Some: Σx2 : x1 -> <()>; λ{}}}
+
+Maybe : ∀-x0 : <Q0, Q1, Q2> -> ∀-x1 : *(x0) -> *(x0) =
+  λ-x0 => λ-x1 => Σx2 : <None, Some> -> (Maybe.arms -x0 -x1 x2)

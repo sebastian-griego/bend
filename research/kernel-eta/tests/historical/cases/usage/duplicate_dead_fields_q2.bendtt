@@ -1,0 +1,3 @@
+Unit : *2 = <()>
+Pair : *2 = Σ-a : Unit -> Σ-b : Unit -> Unit
+test : ∀+x : Unit -> Pair = λ+x => (-x, (-x, ()))

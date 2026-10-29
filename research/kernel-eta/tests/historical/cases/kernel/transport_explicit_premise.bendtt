@@ -1,0 +1,7 @@
+Unit : *2 = <()>
+
+Handler : *1 = ∀x : Unit -> Unit
+
+transport : ∀-f : Handler -> ∀-P : (∀-h : Handler -> *1) ->
+  ∀e : {f == λx => (f x) : Handler} -> ∀v : (P -f) -> (P -λx => (f x)) =
+  λ-f => λ-P => λe => λv => %e : h, eq => (P -h); v

@@ -1,0 +1,4 @@
+Unit : *2 = <()>
+Handler : *1 = ∀x : Unit -> Unit
+Pair : *1 = Σf : Handler -> Handler
+test : ∀f : Handler -> Pair = λf => (f, f)

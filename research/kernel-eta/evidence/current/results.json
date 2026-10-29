@@ -1,0 +1,742 @@
+[
+  {
+    "id": "issue1623_reuse",
+    "suite": "review",
+    "input_sha256": "299df553241dc93042a028eb1053d7a79d811e8deeceeacaf49d84faa717f802",
+    "stages": {
+      "source": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.594923,
+        "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+        "stderr": ""
+      },
+      "export": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.160792,
+        "stdout": "",
+        "stderr": ""
+      },
+      "baseline-kernel": {
+        "code": 1,
+        "timeout": false,
+        "seconds": 0.141171,
+        "stdout": "SOME PROOFS FAIL\nIn use:\nexpected: {(.Box, (x0, ())) == (.Box, (x0, ())) : Box}\nobserved: {(.Box, (\u03bbx1 => (x0 x1), ())) == (.Box, (\u03bbx1 => (x0 x1), ())) : Box}\n",
+        "stderr": ""
+      },
+      "candidate-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.075023,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "baseline-verdict": {
+        "code": 1,
+        "timeout": false,
+        "seconds": 0.095816,
+        "stdout": "",
+        "stderr": "SOME PROOFS FAIL\nIn use:\nexpected: {(.Box, (x0, ())) == (.Box, (x0, ())) : Box}\nobserved: {(.Box, (\u03bbx1 => (x0 x1), ())) == (.Box, (\u03bbx1 => (x0 x1), ())) : Box}\nSorry - this is a mismatch between the TypeScript implementation, and the formalized BendTT kernel. Your proofs may or may not be correct, and we cannot validate them yet. This will be addressed in a future update. Meanwhile, feel free to open an issue to report this bug.\n"
+      },
+      "candidate-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.112715,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      }
+    },
+    "classifications": {
+      "baseline": "kernel_rejects_translation",
+      "candidate": "all_accept"
+    },
+    "errors": [],
+    "export_sha256": "2dc9412f4765a35c0d7a6ea1f89b7c0cb9454628b0a9061cb58fdf768ef0c405"
+  },
+  {
+    "id": "issue1623_direct",
+    "suite": "review",
+    "input_sha256": "d27f1a5a6a9695a733752e2d7f078e307f8f44dc734c3ac0fc241eb26ca3e868",
+    "stages": {
+      "source": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.745863,
+        "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+        "stderr": ""
+      },
+      "export": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.108124,
+        "stdout": "",
+        "stderr": ""
+      },
+      "baseline-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.047544,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.073662,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "baseline-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.111349,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.102549,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      }
+    },
+    "classifications": {
+      "baseline": "all_accept",
+      "candidate": "all_accept"
+    },
+    "errors": [],
+    "export_sha256": "58e03b1bb55db1f923f74a7bd818c9975145ae3ae6ffb6811ebf1a17716bf54f"
+  },
+  {
+    "id": "issue1623_original",
+    "suite": "review",
+    "input_sha256": "19e381bb3915b04084cd1752aaa0399b655f50c11cb67b4d28045bdb889a4290",
+    "stages": {
+      "source": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.742288,
+        "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+        "stderr": ""
+      },
+      "export": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.101433,
+        "stdout": "",
+        "stderr": ""
+      },
+      "baseline-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.055887,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.073675,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "baseline-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.091865,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.105616,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      }
+    },
+    "classifications": {
+      "baseline": "all_accept",
+      "candidate": "all_accept"
+    },
+    "errors": [],
+    "export_sha256": "8a3671fb7a21092e2bca169722908fd3d38d03ab603c83eb50682b8873b6382f"
+  },
+  {
+    "id": "issue1623_generic",
+    "suite": "review",
+    "input_sha256": "6a40139c0e756f3e362e9c9b3413a0ed939577aa124f17b2125373465bdc0838",
+    "stages": {
+      "source": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.811822,
+        "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+        "stderr": ""
+      },
+      "export": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.148369,
+        "stdout": "",
+        "stderr": ""
+      },
+      "baseline-kernel": {
+        "code": 1,
+        "timeout": false,
+        "seconds": 0.008196,
+        "stdout": "SOME PROOFS FAIL\nIn same:\nexpected: (rebuild_fn (.Some, (x0, ())))\nobserved: ((rebuild -\u2200x1 : Nat -> Nat) (.Some, (x0, ())))\n",
+        "stderr": ""
+      },
+      "candidate-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.008807,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "baseline-verdict": {
+        "code": 1,
+        "timeout": false,
+        "seconds": 0.155181,
+        "stdout": "",
+        "stderr": "SOME PROOFS FAIL\nIn same:\nexpected: (rebuild_fn (.Some, (x0, ())))\nobserved: ((rebuild -\u2200x1 : Nat -> Nat) (.Some, (x0, ())))\nSorry - this is a mismatch between the TypeScript implementation, and the formalized BendTT kernel. Your proofs may or may not be correct, and we cannot validate them yet. This will be addressed in a future update. Meanwhile, feel free to open an issue to report this bug.\n"
+      },
+      "candidate-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.158159,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      }
+    },
+    "classifications": {
+      "baseline": "kernel_rejects_translation",
+      "candidate": "all_accept"
+    },
+    "errors": [],
+    "export_sha256": "6b30fbad2fac146b7567d3a5fa49cb1cb8217d849056c6f258c2187eefcd3df5"
+  },
+  {
+    "id": "issue1623_nat_control",
+    "suite": "review",
+    "input_sha256": "4c17ab52ec3f9d5be47b4b5cf90e919a76b411c55a5675d8aa6f0c3b6b9189ef",
+    "stages": {
+      "source": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.149219,
+        "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+        "stderr": ""
+      },
+      "export": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.163457,
+        "stdout": "",
+        "stderr": ""
+      },
+      "baseline-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.009146,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.009596,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "baseline-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.179586,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.163001,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      }
+    },
+    "classifications": {
+      "baseline": "all_accept",
+      "candidate": "all_accept"
+    },
+    "errors": [],
+    "export_sha256": "46d1ff6b8464719668574c0366fbebcdc8535f8e9654eef48424a33422d4c864"
+  },
+  {
+    "id": "review_field_argument_helper",
+    "suite": "review",
+    "input_sha256": "4e0f60bc2d385e2e599056bdcb468b8e2ffe5395cbc3cfbabf116b4c0cad1efb",
+    "stages": {
+      "source": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.085434,
+        "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+        "stderr": ""
+      },
+      "export": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.10982,
+        "stdout": "",
+        "stderr": ""
+      },
+      "baseline-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.007264,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.007304,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "baseline-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.12648,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.135945,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      }
+    },
+    "classifications": {
+      "baseline": "all_accept",
+      "candidate": "all_accept"
+    },
+    "errors": [],
+    "export_sha256": "62ddce76099db0f9279b2c4c50c3231ccaf5b8bb187c7448cb6cad31b9761890"
+  },
+  {
+    "id": "review_unfold_box",
+    "suite": "review",
+    "input_sha256": "45c9a2f6e448c94697f281d1c09ebcb5ed5abebcbd2a283850413aaabb9b9895",
+    "stages": {
+      "source": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.085801,
+        "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+        "stderr": ""
+      },
+      "export": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.107971,
+        "stdout": "",
+        "stderr": ""
+      },
+      "baseline-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.007679,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.007522,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "baseline-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.114727,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.121241,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      }
+    },
+    "classifications": {
+      "baseline": "all_accept",
+      "candidate": "all_accept"
+    },
+    "errors": [],
+    "export_sha256": "3c5bbc01b4e7f556103512f4aa22c93828808181cba2e7d4f3bc111d19644471"
+  },
+  {
+    "id": "review_unfold_maybe",
+    "suite": "review",
+    "input_sha256": "fba2a69807b010eca00cf39e76519e021bb7d5eadd64eef7e8d6139eb707454b",
+    "stages": {
+      "source": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.165487,
+        "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+        "stderr": ""
+      },
+      "export": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.176486,
+        "stdout": "",
+        "stderr": ""
+      },
+      "baseline-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.015624,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.007448,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "baseline-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.182709,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.177443,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      }
+    },
+    "classifications": {
+      "baseline": "all_accept",
+      "candidate": "all_accept"
+    },
+    "errors": [],
+    "export_sha256": "a1cc4498106870c0630312c826d6c7fd7b990f1cf16fe0de11731155612ec540"
+  },
+  {
+    "id": "review_rewrite_field",
+    "suite": "review",
+    "input_sha256": "45bee726ce1ca9d23852a9add4c779dac2c54843e33f0cbe3b12c75e71bfce20",
+    "stages": {
+      "source": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.094649,
+        "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+        "stderr": ""
+      },
+      "export": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.101767,
+        "stdout": "",
+        "stderr": ""
+      },
+      "baseline-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.011563,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.009201,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "baseline-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.102242,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.116155,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      }
+    },
+    "classifications": {
+      "baseline": "all_accept",
+      "candidate": "all_accept"
+    },
+    "errors": [],
+    "export_sha256": "4a88595748aabf43050ea3f0297bc6b32335082f150475f65b1c7a1807901c17"
+  },
+  {
+    "id": "review_eta_equal_fields",
+    "suite": "review",
+    "input_sha256": "c74cce9c5edb9c3d7b8a45e0022aa0d4fd0c79ce0c15d32a0ce9ab86845521e8",
+    "stages": {
+      "source": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.092627,
+        "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+        "stderr": ""
+      },
+      "export": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.104805,
+        "stdout": "",
+        "stderr": ""
+      },
+      "baseline-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.00795,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.009397,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "baseline-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.096143,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.113657,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      }
+    },
+    "classifications": {
+      "baseline": "all_accept",
+      "candidate": "all_accept"
+    },
+    "errors": [],
+    "export_sha256": "80586846b5da0fdfc59b19b6e8e6ea4247f51be18e468bfdd25b16e249489997"
+  },
+  {
+    "id": "review_named_id",
+    "suite": "review",
+    "input_sha256": "96251dbdbdec5e397266ac2e46dea341e9b2962b7813cb6ed45ae5e54345cb2f",
+    "stages": {
+      "source": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.169726,
+        "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+        "stderr": ""
+      },
+      "export": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.162804,
+        "stdout": "",
+        "stderr": ""
+      },
+      "baseline-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.007783,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.007652,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "baseline-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.174083,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.147824,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      }
+    },
+    "classifications": {
+      "baseline": "all_accept",
+      "candidate": "all_accept"
+    },
+    "errors": [],
+    "export_sha256": "563a9726c88da4343839baee24ed52e46f4db03004bd2c26b3825a9d6e7fea8d"
+  },
+  {
+    "id": "negative_unrelated_field",
+    "suite": "review",
+    "input_sha256": "291532ef51ea8a8bbd61bd8d98145c8398f41125115947f1ed5b4e8c787c13cf",
+    "stages": {
+      "source": {
+        "code": 1,
+        "timeout": false,
+        "seconds": 0.081348,
+        "stdout": "",
+        "stderr": "SOME PROOFS FAIL\nError:\n- expected : Box{f}\n- observed : Box{g}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n4 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n5>|   {==}\n  |   ^^^^\n6 | \n"
+      },
+      "export": {
+        "code": 1,
+        "timeout": false,
+        "seconds": 0.107159,
+        "stdout": "",
+        "stderr": "SOME PROOFS FAIL\nError:\n- expected : Box{f}\n- observed : Box{g}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n4 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n5>|   {==}\n  |   ^^^^\n6 | \n"
+      },
+      "baseline-verdict": {
+        "code": 1,
+        "timeout": false,
+        "seconds": 0.091373,
+        "stdout": "",
+        "stderr": "SOME PROOFS FAIL\nError:\n- expected : Box{f}\n- observed : Box{g}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n4 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n5>|   {==}\n  |   ^^^^\n6 | \n"
+      },
+      "candidate-verdict": {
+        "code": 1,
+        "timeout": false,
+        "seconds": 0.097441,
+        "stdout": "",
+        "stderr": "SOME PROOFS FAIL\nError:\n- expected : Box{f}\n- observed : Box{g}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n4 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n5>|   {==}\n  |   ^^^^\n6 | \n"
+      }
+    },
+    "classifications": {
+      "baseline": "source_reject",
+      "candidate": "source_reject"
+    },
+    "errors": []
+  },
+  {
+    "id": "negative_unrelated_helper",
+    "suite": "review",
+    "input_sha256": "0a8707bb5a690039fcf9db519d4a85305f4497fd036fa4bfc743d2c382a43551",
+    "stages": {
+      "source": {
+        "code": 1,
+        "timeout": false,
+        "seconds": 0.091702,
+        "stdout": "",
+        "stderr": "SOME PROOFS FAIL\nError:\n- expected : {Box{f} == Box{g} : Box}\n- observed : {Box{f} == Box{f} : Box}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n7 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n8>|   reflexive(Box{f})\n  |   ^^^^^^^^^^^^^^^^^\n9 | \n"
+      },
+      "export": {
+        "code": 1,
+        "timeout": false,
+        "seconds": 0.084184,
+        "stdout": "",
+        "stderr": "SOME PROOFS FAIL\nError:\n- expected : {Box{f} == Box{g} : Box}\n- observed : {Box{f} == Box{f} : Box}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n7 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n8>|   reflexive(Box{f})\n  |   ^^^^^^^^^^^^^^^^^\n9 | \n"
+      },
+      "baseline-verdict": {
+        "code": 1,
+        "timeout": false,
+        "seconds": 0.110437,
+        "stdout": "",
+        "stderr": "SOME PROOFS FAIL\nError:\n- expected : {Box{f} == Box{g} : Box}\n- observed : {Box{f} == Box{f} : Box}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n7 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n8>|   reflexive(Box{f})\n  |   ^^^^^^^^^^^^^^^^^\n9 | \n"
+      },
+      "candidate-verdict": {
+        "code": 1,
+        "timeout": false,
+        "seconds": 0.083571,
+        "stdout": "",
+        "stderr": "SOME PROOFS FAIL\nError:\n- expected : {Box{f} == Box{g} : Box}\n- observed : {Box{f} == Box{f} : Box}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n7 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n8>|   reflexive(Box{f})\n  |   ^^^^^^^^^^^^^^^^^\n9 | \n"
+      }
+    },
+    "classifications": {
+      "baseline": "source_reject",
+      "candidate": "source_reject"
+    },
+    "errors": []
+  },
+  {
+    "id": "review_ctr_param_field_eta",
+    "suite": "review",
+    "input_sha256": "809ff65848d533dce58a1ae7d4c6900ff354db72b1553e498ce5f95d1b7da81a",
+    "stages": {
+      "source": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.143647,
+        "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
+        "stderr": ""
+      },
+      "export": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.154255,
+        "stdout": "",
+        "stderr": ""
+      },
+      "baseline-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.007758,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-kernel": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.007434,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "baseline-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.152235,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      },
+      "candidate-verdict": {
+        "code": 0,
+        "timeout": false,
+        "seconds": 0.125618,
+        "stdout": "ALL PROOFS CHECK\n",
+        "stderr": ""
+      }
+    },
+    "classifications": {
+      "baseline": "all_accept",
+      "candidate": "all_accept"
+    },
+    "errors": [],
+    "export_sha256": "384503a22944ff79ee289f1658b00a745f03bb80992bce46fa209a959e2247f2"
+  }
+]

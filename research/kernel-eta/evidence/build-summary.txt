@@ -1,0 +1,71 @@
+Fresh formal reference build
+============================
+
+Lean version: 4.34.0.
+Platform: macOS arm64. Native binary hashes are platform-specific.
+Python runner: standard library only; Python 3.9 or later.
+
+All seven compiler stages pass:
+- Complete revised proof source and native checker.
+- Exact audit of 39 selected interface declarations.
+- Complete unchanged historical kernel and native checker.
+- Complete unchanged current-main kernel and native checker.
+
+The 39 interface types match the previous audit exactly as Lean expressions.
+The 39 axiom sets also match. The 37 selected theorem axiom reports are present.
+Only propext, Classical.choice, and Quot.sound occur in those axiom sets.
+Both complete builds produce identical native binaries on this platform.
+All three binaries pass the existing CLI usage-contract check.
+The source scan finds no sorry, admit, custom axiom, explicit opaque, or unsafe declaration.
+Only Std.Data.HashMap is imported by each kernel source.
+
+Portable command from the repository root:
+  python3 research/kernel-eta/tools/build.py --lean-bin /path/to/lean-4.34.0/bin
+
+Optional current-main comparison:
+  python3 research/kernel-eta/tools/build.py --lean-bin /path/to/lean-4.34.0/bin \
+    --current-source research/kernel-eta/build/current-main/bend2/bendtt.lean
+
+Default products:
+  research/kernel-eta/build/bendtt-consolidated
+  research/kernel-eta/build/bendtt-baseline
+  research/kernel-eta/build/current-kernel/bendtt (optional)
+  research/kernel-eta/build/build-verification.json
+
+All Lean object files, generated C, executables, and logs stay in the build directory.
+The final runner was checked in a separate build/runner-check directory.
+The published evidence comes from that final runner check.
+The original proof source remains byte-identical.
+
+Exact source hashes:
+  Revised: 1de4fe3963eec5beaf344ef00b6fa802f07d302e6aacdaedfd388e89bc760db4
+  Historical: cc78aa9ff3491ff1b788797bdcab4cb98107dcb1730ed99834f6933b11d88335
+  Current main: 776bfba6f08e9cbebb26fb3d43fa892b80d1d74b0a57698db4bc5d6b5db5b567
+
+Selected guarantees:
+- Accepted revised books are well typed and satisfy the original liveness check.
+- Revised typing is stable under well-typed substitution and instantiation.
+- Original parallel reduction, runtime evaluation, and runtime traces preserve revised typing.
+- Typed eta factorization and rigid-type exposure have no open simulation assumption.
+- Closed typed terms have progress under book typing and liveness assumptions.
+- A value at a formed Data type satisfies the original Data predicate.
+- Joined values at the same revised type have equivalent Data classification.
+- A checked definition retains its declared type along original runtime traces.
+- Closed live terms cannot have the empty enumeration type in a well-typed live book.
+- An accepted book has no definition whose declared type is joined to Empty.
+- Accepted text parses to such an accepted book.
+
+Limits:
+- These are the historical revised checker guarantees, not a port of every later kernel theorem.
+- The result does not prove safe.ts translation correctness or source-checker soundness.
+- It does not prove comparison completeness or adequacy of a fixed fuel bound.
+- It does not prove parsing against an independent text specification.
+- It does not prove native compiler correctness or runtime performance.
+- Exact quantity-sensitive typing need not survive arbitrary eta contraction.
+- Eta is used in comparison; original runtime reduction remains in the safety theorems.
+- Erasure retains All, Sig, Tup, and Let quantity tags.
+- Data classification equivalence requires values at the same revised type.
+
+See kernel/audited-interface.json for exact Lean expression types and axiom sets.
+See proof-interface.txt for the interface map and its mathematical conditions.
+See evidence/build-verification.json for hashes, commands, and build results.

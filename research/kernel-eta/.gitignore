@@ -1,0 +1,8 @@
+build/
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+*.c
+!tests/**/*.bendtt
+!evidence/**/*.bendtt

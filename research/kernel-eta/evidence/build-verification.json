@@ -1,0 +1,489 @@
+{
+  "schema": 1,
+  "runner_sha256": "0661bedfca382d7baec89e1952c5d688c8d742bdf0b20467cf3338ea83aa9e93",
+  "python_version": "3.14.6",
+  "lean_version": "Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)",
+  "lean_short_version": "4.34.0",
+  "revised_source": {
+    "sha256": "1de4fe3963eec5beaf344ef00b6fa802f07d302e6aacdaedfd388e89bc760db4",
+    "bytes": 322934,
+    "lines": 9237,
+    "imports": [
+      "Std.Data.HashMap"
+    ],
+    "no_sorry_admit_custom_axioms_or_unsafe": true
+  },
+  "baseline_source": {
+    "sha256": "cc78aa9ff3491ff1b788797bdcab4cb98107dcb1730ed99834f6933b11d88335",
+    "bytes": 174222,
+    "lines": 3981,
+    "imports": [
+      "Std.Data.HashMap"
+    ],
+    "no_sorry_admit_custom_axioms_or_unsafe": true
+  },
+  "revised_binary": {
+    "path": "$BUILD/bendtt-consolidated",
+    "sha256": "d2ae4895fa8d1f9bbbd9aecfcfd3d27d55b39597ff06c8df93efe9cd71003ed9",
+    "usage_smoke_pass": true
+  },
+  "baseline_binary": {
+    "path": "$BUILD/bendtt-baseline",
+    "sha256": "054ab772ed343b192eb5e3515c69af0145ddafd5b45ff0f5727bb17f64f4392a",
+    "usage_smoke_pass": true
+  },
+  "current_main": {
+    "source": {
+      "sha256": "776bfba6f08e9cbebb26fb3d43fa892b80d1d74b0a57698db4bc5d6b5db5b567",
+      "bytes": 177085,
+      "lines": 4043,
+      "imports": [
+        "Std.Data.HashMap"
+      ],
+      "no_sorry_admit_custom_axioms_or_unsafe": true
+    },
+    "binary": {
+      "path": "$BUILD/current-kernel/bendtt",
+      "sha256": "6f1f98065b6c3efb128a71c9a20a03ed8c717294749ce0210ba41a7ea4ae80d1",
+      "usage_smoke_pass": true
+    }
+  },
+  "audited_interface_sha256": "eb73bcf876f5de00a27f8fbebeee6f754c6d14561df1b2cc8d9c15ca5475324d",
+  "interface_declarations": 39,
+  "printed_theorem_axiom_reports": 37,
+  "exact_interface_types_match": true,
+  "exact_interface_axiom_sets_match": true,
+  "permitted_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "interface": [
+    {
+      "name": "Candidate.run",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Candidate.checkText",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Candidate.accepted_text_no_empty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.chk",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.book_check",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.typed_sub",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.typed_inst",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.sr",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.pars_sr",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.eval_preservation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.trace_preservation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.data_kind_trace_preservation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.checked_definition_trace_preservation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.progress",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.empty_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.canon_data",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.data_results",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.no_closed_empty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.checked_definition_data",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.checked_data_results",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Revised.checked_no_empty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "FullDataSafety.typed_eta_factorization",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "FullDataSafety.typed_kind_exposure",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "FullDataSafety.typed_data_exposure",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "TypedValueDataEquality.data_iff_same_type_join",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "halts",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "confluent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "sub_subz",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "EquationBridge.diagnostic_substitution_join",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "EtaCommutation.full_eta_ordinary",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "GlobalDiamond.confluent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "EquationBridge.diagnostic_join",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ExecutableOrder.diagnostic_qge_sound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ExecutableOrder.diagnostic_fits_sound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ExecutableOrder.join_old",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ExecutableOrder.join_sub",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ExecutableOrder.join_refl",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ExecutableOrder.join_symm",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ExecutableOrder.join_trans",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "stage": "revised-lean",
+      "command": [
+        "$LEAN_BIN/lean",
+        "-o",
+        "Consolidated.olean",
+        "-c",
+        "Consolidated.c",
+        "Consolidated.lean"
+      ],
+      "cwd": "$BUILD/revised",
+      "returncode": 0,
+      "seconds": 17.882791,
+      "stdout": "logs/revised-lean.stdout.txt",
+      "stderr": "logs/revised-lean.stderr.txt"
+    },
+    {
+      "stage": "revised-native",
+      "command": [
+        "$LEAN_BIN/leanc",
+        "-O2",
+        "-o",
+        "$BUILD/bendtt-consolidated",
+        "Consolidated.c"
+      ],
+      "cwd": "$BUILD/revised",
+      "returncode": 0,
+      "seconds": 4.841463,
+      "stdout": "logs/revised-native.stdout.txt",
+      "stderr": "logs/revised-native.stderr.txt"
+    },
+    {
+      "stage": "proof-interface",
+      "command": [
+        "$LEAN_BIN/lean",
+        "Interface.lean"
+      ],
+      "cwd": "$BUILD/revised",
+      "returncode": 0,
+      "seconds": 4.221264,
+      "stdout": "logs/proof-interface.stdout.txt",
+      "stderr": "logs/proof-interface.stderr.txt"
+    },
+    {
+      "stage": "baseline-lean",
+      "command": [
+        "$LEAN_BIN/lean",
+        "-o",
+        "bendtt.olean",
+        "-c",
+        "bendtt.c",
+        "bendtt.lean"
+      ],
+      "cwd": "$BUILD/baseline",
+      "returncode": 0,
+      "seconds": 9.905705,
+      "stdout": "logs/baseline-lean.stdout.txt",
+      "stderr": "logs/baseline-lean.stderr.txt"
+    },
+    {
+      "stage": "baseline-native",
+      "command": [
+        "$LEAN_BIN/leanc",
+        "-O2",
+        "-o",
+        "$BUILD/bendtt-baseline",
+        "bendtt.c"
+      ],
+      "cwd": "$BUILD/baseline",
+      "returncode": 0,
+      "seconds": 3.726824,
+      "stdout": "logs/baseline-native.stdout.txt",
+      "stderr": "logs/baseline-native.stderr.txt"
+    },
+    {
+      "stage": "current-kernel-lean",
+      "command": [
+        "$LEAN_BIN/lean",
+        "-o",
+        "bendtt.olean",
+        "-c",
+        "bendtt.c",
+        "bendtt.lean"
+      ],
+      "cwd": "$BUILD/current-kernel",
+      "returncode": 0,
+      "seconds": 9.695493,
+      "stdout": "logs/current-kernel-lean.stdout.txt",
+      "stderr": "logs/current-kernel-lean.stderr.txt"
+    },
+    {
+      "stage": "current-kernel-native",
+      "command": [
+        "$LEAN_BIN/leanc",
+        "-O2",
+        "-o",
+        "$BUILD/current-kernel/bendtt",
+        "bendtt.c"
+      ],
+      "cwd": "$BUILD/current-kernel",
+      "returncode": 0,
+      "seconds": 3.559952,
+      "stdout": "logs/current-kernel-native.stdout.txt",
+      "stderr": "logs/current-kernel-native.stderr.txt"
+    }
+  ],
+  "limits": [
+    "This checks the complete Lean source and the selected audited interface.",
+    "It does not prove safe.ts translation correctness or source-checker soundness.",
+    "It does not prove comparator completeness or an adequate fixed fuel bound.",
+    "It does not prove parsing against an independent text specification.",
+    "It does not prove native compiler correctness or runtime performance.",
+    "Binary hashes and build times depend on the platform and toolchain."
+  ]
+}

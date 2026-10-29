@@ -1,0 +1,3 @@
+Unit : *2 = <()>
+Handler : *1 = ∀x : Unit -> Unit
+test : {λx => x == λ+x => x : Handler} = {==}

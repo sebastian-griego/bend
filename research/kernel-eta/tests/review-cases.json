@@ -1,0 +1,114 @@
+[
+  {
+    "id": "issue1623_reuse",
+    "file": "tests/review/issue1623_reuse.bend",
+    "language": "bend",
+    "expected_source": true,
+    "desired_candidate": true,
+    "provenance": "https://github.com/bendlang/bend/issues/1623"
+  },
+  {
+    "id": "issue1623_direct",
+    "file": "tests/review/issue1623_direct.bend",
+    "language": "bend",
+    "expected_source": true,
+    "desired_candidate": true,
+    "provenance": "https://github.com/bendlang/bend/issues/1623"
+  },
+  {
+    "id": "issue1623_original",
+    "file": "tests/review/issue1623_original.bend",
+    "language": "bend",
+    "expected_source": true,
+    "desired_candidate": true,
+    "provenance": "https://github.com/bendlang/bend/issues/1623"
+  },
+  {
+    "id": "issue1623_generic",
+    "file": "tests/review/issue1623_generic.bend",
+    "language": "bend",
+    "expected_source": true,
+    "desired_candidate": true,
+    "provenance": "https://github.com/bendlang/bend/issues/1623#issuecomment-6305183385"
+  },
+  {
+    "id": "issue1623_nat_control",
+    "file": "tests/review/issue1623_nat_control.bend",
+    "language": "bend",
+    "expected_source": true,
+    "desired_candidate": true,
+    "provenance": "https://github.com/bendlang/bend/issues/1623#issuecomment-6305183385"
+  },
+  {
+    "id": "review_field_argument_helper",
+    "file": "tests/review/review_field_argument_helper.bend",
+    "language": "bend",
+    "expected_source": true,
+    "desired_candidate": true,
+    "provenance": "https://github.com/bendlang/bend/pull/1657"
+  },
+  {
+    "id": "review_unfold_box",
+    "file": "tests/review/review_unfold_box.bend",
+    "language": "bend",
+    "expected_source": true,
+    "desired_candidate": true,
+    "provenance": "https://github.com/bendlang/bend/pull/1657"
+  },
+  {
+    "id": "review_unfold_maybe",
+    "file": "tests/review/review_unfold_maybe.bend",
+    "language": "bend",
+    "expected_source": true,
+    "desired_candidate": true,
+    "provenance": "https://github.com/bendlang/bend/pull/1657"
+  },
+  {
+    "id": "review_rewrite_field",
+    "file": "tests/review/review_rewrite_field.bend",
+    "language": "bend",
+    "expected_source": true,
+    "desired_candidate": true,
+    "provenance": "https://github.com/bendlang/bend/pull/1657"
+  },
+  {
+    "id": "review_eta_equal_fields",
+    "file": "tests/review/review_eta_equal_fields.bend",
+    "language": "bend",
+    "expected_source": true,
+    "desired_candidate": true,
+    "provenance": "https://github.com/bendlang/bend/pull/1657"
+  },
+  {
+    "id": "review_named_id",
+    "file": "tests/review/review_named_id.bend",
+    "language": "bend",
+    "expected_source": true,
+    "desired_candidate": true,
+    "provenance": "https://github.com/bendlang/bend/pull/1657"
+  },
+  {
+    "id": "negative_unrelated_field",
+    "file": "tests/review/negative_unrelated_field.bend",
+    "language": "bend",
+    "expected_source": false,
+    "desired_candidate": false,
+    "provenance": "https://github.com/bendlang/bend/issues/1623"
+  },
+  {
+    "id": "negative_unrelated_helper",
+    "file": "tests/review/negative_unrelated_helper.bend",
+    "language": "bend",
+    "expected_source": false,
+    "desired_candidate": false,
+    "provenance": "https://github.com/bendlang/bend/issues/1623"
+  },
+  {
+    "id": "review_ctr_param_field_eta",
+    "file": "tests/review/review_ctr_param_field_eta.bend",
+    "language": "bend",
+    "expected_source": true,
+    "desired_candidate": true,
+    "provenance": "https://github.com/bendlang/bend/blob/4982c105b9e8e06cc1d1e2d0d63c546dac4aa377/tests/check/ctr_param_field_eta.bend"
+  }
+]

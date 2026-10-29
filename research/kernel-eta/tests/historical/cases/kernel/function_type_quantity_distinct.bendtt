@@ -1,0 +1,4 @@
+Unit : *2 = <()>
+Handler : *1 = ∀x : Unit -> Unit
+Many : *1 = ∀+x : Unit -> Unit
+test : {Handler == Many : *1} = {==}

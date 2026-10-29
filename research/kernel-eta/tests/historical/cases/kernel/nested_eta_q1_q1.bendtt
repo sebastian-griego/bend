@@ -1,0 +1,4 @@
+Unit : *2 = <()>
+F : *1 = ∀x : Unit -> ∀y : Unit -> Unit
+test : ∀-f : F -> {f == λx => λy => (f x y) : F} =
+  λ-f => {==}

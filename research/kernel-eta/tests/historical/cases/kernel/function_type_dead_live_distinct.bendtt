@@ -1,0 +1,4 @@
+Unit : *2 = <()>
+Handler : *1 = ∀x : Unit -> Unit
+Dead : *1 = ∀-x : Unit -> Unit
+test : {Handler == Dead : *1} = {==}

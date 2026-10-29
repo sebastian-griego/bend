@@ -1,0 +1,5 @@
+Unit : *2 = <()>
+Handler : *1 = ∀x : Unit -> Unit
+test : ∀-f : Handler -> ∀-P : (∀-h : Handler -> *1) ->
+  ∀v : (P -f) -> (P -({λh => h : ∀h : Handler -> Handler} f)) =
+  λ-f => λ-P => λv => v
