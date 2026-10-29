@@ -7,42 +7,42 @@
       "source": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.594923,
+        "seconds": 0.555197,
         "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
         "stderr": ""
       },
       "export": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.160792,
+        "seconds": 0.114923,
         "stdout": "",
         "stderr": ""
       },
       "baseline-kernel": {
         "code": 1,
         "timeout": false,
-        "seconds": 0.141171,
+        "seconds": 0.094795,
         "stdout": "SOME PROOFS FAIL\nIn use:\nexpected: {(.Box, (x0, ())) == (.Box, (x0, ())) : Box}\nobserved: {(.Box, (\u03bbx1 => (x0 x1), ())) == (.Box, (\u03bbx1 => (x0 x1), ())) : Box}\n",
         "stderr": ""
       },
       "candidate-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.075023,
+        "seconds": 0.090287,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "baseline-verdict": {
         "code": 1,
         "timeout": false,
-        "seconds": 0.095816,
+        "seconds": 0.099036,
         "stdout": "",
         "stderr": "SOME PROOFS FAIL\nIn use:\nexpected: {(.Box, (x0, ())) == (.Box, (x0, ())) : Box}\nobserved: {(.Box, (\u03bbx1 => (x0 x1), ())) == (.Box, (\u03bbx1 => (x0 x1), ())) : Box}\nSorry - this is a mismatch between the TypeScript implementation, and the formalized BendTT kernel. Your proofs may or may not be correct, and we cannot validate them yet. This will be addressed in a future update. Meanwhile, feel free to open an issue to report this bug.\n"
       },
       "candidate-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.112715,
+        "seconds": 0.098317,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       }
@@ -62,42 +62,42 @@
       "source": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.745863,
+        "seconds": 0.649385,
         "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
         "stderr": ""
       },
       "export": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.108124,
+        "seconds": 0.096125,
         "stdout": "",
         "stderr": ""
       },
       "baseline-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.047544,
+        "seconds": 0.019483,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.073662,
+        "seconds": 0.097862,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "baseline-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.111349,
+        "seconds": 0.10432,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.102549,
+        "seconds": 0.115402,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       }
@@ -117,42 +117,42 @@
       "source": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.742288,
+        "seconds": 0.663148,
         "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
         "stderr": ""
       },
       "export": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.101433,
+        "seconds": 0.111177,
         "stdout": "",
         "stderr": ""
       },
       "baseline-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.055887,
+        "seconds": 0.011856,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.073675,
+        "seconds": 0.089536,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "baseline-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.091865,
+        "seconds": 0.087482,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.105616,
+        "seconds": 0.100888,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       }
@@ -172,42 +172,42 @@
       "source": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.811822,
+        "seconds": 0.743081,
         "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
         "stderr": ""
       },
       "export": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.148369,
+        "seconds": 0.152304,
         "stdout": "",
         "stderr": ""
       },
       "baseline-kernel": {
         "code": 1,
         "timeout": false,
-        "seconds": 0.008196,
+        "seconds": 0.009622,
         "stdout": "SOME PROOFS FAIL\nIn same:\nexpected: (rebuild_fn (.Some, (x0, ())))\nobserved: ((rebuild -\u2200x1 : Nat -> Nat) (.Some, (x0, ())))\n",
         "stderr": ""
       },
       "candidate-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.008807,
+        "seconds": 0.009521,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "baseline-verdict": {
         "code": 1,
         "timeout": false,
-        "seconds": 0.155181,
+        "seconds": 0.178582,
         "stdout": "",
         "stderr": "SOME PROOFS FAIL\nIn same:\nexpected: (rebuild_fn (.Some, (x0, ())))\nobserved: ((rebuild -\u2200x1 : Nat -> Nat) (.Some, (x0, ())))\nSorry - this is a mismatch between the TypeScript implementation, and the formalized BendTT kernel. Your proofs may or may not be correct, and we cannot validate them yet. This will be addressed in a future update. Meanwhile, feel free to open an issue to report this bug.\n"
       },
       "candidate-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.158159,
+        "seconds": 0.18728,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       }
@@ -227,42 +227,42 @@
       "source": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.149219,
+        "seconds": 0.164931,
         "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
         "stderr": ""
       },
       "export": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.163457,
+        "seconds": 0.15562,
         "stdout": "",
         "stderr": ""
       },
       "baseline-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.009146,
+        "seconds": 0.009573,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.009596,
+        "seconds": 0.016616,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "baseline-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.179586,
+        "seconds": 0.154019,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.163001,
+        "seconds": 0.171283,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       }
@@ -282,42 +282,42 @@
       "source": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.085434,
+        "seconds": 0.06592,
         "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
         "stderr": ""
       },
       "export": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.10982,
+        "seconds": 0.106239,
         "stdout": "",
         "stderr": ""
       },
       "baseline-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.007264,
+        "seconds": 0.009617,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.007304,
+        "seconds": 0.010851,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "baseline-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.12648,
+        "seconds": 0.08613,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.135945,
+        "seconds": 0.074191,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       }
@@ -337,42 +337,42 @@
       "source": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.085801,
+        "seconds": 0.058457,
         "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
         "stderr": ""
       },
       "export": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.107971,
+        "seconds": 0.082788,
         "stdout": "",
         "stderr": ""
       },
       "baseline-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.007679,
+        "seconds": 0.015829,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.007522,
+        "seconds": 0.010615,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "baseline-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.114727,
+        "seconds": 0.080032,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.121241,
+        "seconds": 0.082806,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       }
@@ -392,42 +392,42 @@
       "source": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.165487,
+        "seconds": 0.145088,
         "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
         "stderr": ""
       },
       "export": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.176486,
+        "seconds": 0.145265,
         "stdout": "",
         "stderr": ""
       },
       "baseline-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.015624,
+        "seconds": 0.008558,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.007448,
+        "seconds": 0.007941,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "baseline-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.182709,
+        "seconds": 0.198004,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.177443,
+        "seconds": 0.1431,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       }
@@ -447,42 +447,42 @@
       "source": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.094649,
+        "seconds": 0.054886,
         "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
         "stderr": ""
       },
       "export": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.101767,
+        "seconds": 0.090738,
         "stdout": "",
         "stderr": ""
       },
       "baseline-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.011563,
+        "seconds": 0.008339,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.009201,
+        "seconds": 0.009294,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "baseline-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.102242,
+        "seconds": 0.075159,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.116155,
+        "seconds": 0.083619,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       }
@@ -502,42 +502,42 @@
       "source": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.092627,
+        "seconds": 0.056485,
         "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
         "stderr": ""
       },
       "export": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.104805,
+        "seconds": 0.083529,
         "stdout": "",
         "stderr": ""
       },
       "baseline-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.00795,
+        "seconds": 0.008562,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.009397,
+        "seconds": 0.008803,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "baseline-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.096143,
+        "seconds": 0.080726,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.113657,
+        "seconds": 0.075718,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       }
@@ -557,42 +557,42 @@
       "source": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.169726,
+        "seconds": 0.144484,
         "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
         "stderr": ""
       },
       "export": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.162804,
+        "seconds": 0.172373,
         "stdout": "",
         "stderr": ""
       },
       "baseline-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.007783,
+        "seconds": 0.010836,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.007652,
+        "seconds": 0.009338,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "baseline-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.174083,
+        "seconds": 0.130091,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.147824,
+        "seconds": 0.131522,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       }
@@ -612,28 +612,28 @@
       "source": {
         "code": 1,
         "timeout": false,
-        "seconds": 0.081348,
+        "seconds": 0.056179,
         "stdout": "",
         "stderr": "SOME PROOFS FAIL\nError:\n- expected : Box{f}\n- observed : Box{g}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n4 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n5>|   {==}\n  |   ^^^^\n6 | \n"
       },
       "export": {
         "code": 1,
         "timeout": false,
-        "seconds": 0.107159,
+        "seconds": 0.080394,
         "stdout": "",
         "stderr": "SOME PROOFS FAIL\nError:\n- expected : Box{f}\n- observed : Box{g}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n4 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n5>|   {==}\n  |   ^^^^\n6 | \n"
       },
       "baseline-verdict": {
         "code": 1,
         "timeout": false,
-        "seconds": 0.091373,
+        "seconds": 0.068034,
         "stdout": "",
         "stderr": "SOME PROOFS FAIL\nError:\n- expected : Box{f}\n- observed : Box{g}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n4 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n5>|   {==}\n  |   ^^^^\n6 | \n"
       },
       "candidate-verdict": {
         "code": 1,
         "timeout": false,
-        "seconds": 0.097441,
+        "seconds": 0.10075,
         "stdout": "",
         "stderr": "SOME PROOFS FAIL\nError:\n- expected : Box{f}\n- observed : Box{g}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n4 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n5>|   {==}\n  |   ^^^^\n6 | \n"
       }
@@ -652,28 +652,28 @@
       "source": {
         "code": 1,
         "timeout": false,
-        "seconds": 0.091702,
+        "seconds": 0.065932,
         "stdout": "",
         "stderr": "SOME PROOFS FAIL\nError:\n- expected : {Box{f} == Box{g} : Box}\n- observed : {Box{f} == Box{f} : Box}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n7 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n8>|   reflexive(Box{f})\n  |   ^^^^^^^^^^^^^^^^^\n9 | \n"
       },
       "export": {
         "code": 1,
         "timeout": false,
-        "seconds": 0.084184,
+        "seconds": 0.074862,
         "stdout": "",
         "stderr": "SOME PROOFS FAIL\nError:\n- expected : {Box{f} == Box{g} : Box}\n- observed : {Box{f} == Box{f} : Box}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n7 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n8>|   reflexive(Box{f})\n  |   ^^^^^^^^^^^^^^^^^\n9 | \n"
       },
       "baseline-verdict": {
         "code": 1,
         "timeout": false,
-        "seconds": 0.110437,
+        "seconds": 0.063388,
         "stdout": "",
         "stderr": "SOME PROOFS FAIL\nError:\n- expected : {Box{f} == Box{g} : Box}\n- observed : {Box{f} == Box{f} : Box}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n7 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n8>|   reflexive(Box{f})\n  |   ^^^^^^^^^^^^^^^^^\n9 | \n"
       },
       "candidate-verdict": {
         "code": 1,
         "timeout": false,
-        "seconds": 0.083571,
+        "seconds": 0.107233,
         "stdout": "",
         "stderr": "SOME PROOFS FAIL\nError:\n- expected : {Box{f} == Box{g} : Box}\n- observed : {Box{f} == Box{f} : Box}\nContext:\n- f : @_:Type -> Type\n- g : @_:Type -> Type\nLocation: bad\n7 | def bad(f: Type -> Type, g: Type -> Type) -> {Box{f} == Box{g} : Box}:\n8>|   reflexive(Box{f})\n  |   ^^^^^^^^^^^^^^^^^\n9 | \n"
       }
@@ -692,42 +692,42 @@
       "source": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.143647,
+        "seconds": 0.180629,
         "stdout": "ALL PROOFS CHECK\nUse --verdict for mathematical validity.\n",
         "stderr": ""
       },
       "export": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.154255,
+        "seconds": 0.140967,
         "stdout": "",
         "stderr": ""
       },
       "baseline-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.007758,
+        "seconds": 0.017516,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-kernel": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.007434,
+        "seconds": 0.013324,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "baseline-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.152235,
+        "seconds": 0.156479,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       },
       "candidate-verdict": {
         "code": 0,
         "timeout": false,
-        "seconds": 0.125618,
+        "seconds": 0.132458,
         "stdout": "ALL PROOFS CHECK\n",
         "stderr": ""
       }

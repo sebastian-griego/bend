@@ -201,6 +201,7 @@ def main():
                "source_files": {p: sha(source / "bend2" / p) for p in ["main.ts", "bend.ts", "safe.ts", "comp.ts", "base.bend", "bendtt.lean"]},
                "kernel_binary_hashes": kernel_hashes, "binaries_match_verified_build": True,
                "runner_sha256": sha(Path(__file__)), "build_record_sha256": sha(args.build_record),
+               "source_runner_sha256": sha(HERE / "tools/run-source.ts"),
                "reference_source_sha256": SOURCE_HASH, "bun_version": subprocess.check_output([bun, "--version"], text=True).strip(),
                "counts": {name: {x: sum(r["classifications"][name] == x for r in rows) for x in sorted({r["classifications"][name] for r in rows})} for name in kernels},
                "recoveries": [r["id"] for r in rows if r["classifications"]["baseline"] == "kernel_rejects_translation" and r["classifications"]["candidate"] == "all_accept"],

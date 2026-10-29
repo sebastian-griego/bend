@@ -51,6 +51,7 @@ or certificate is patched. The runner checks executable hashes against the
 verified build record. It checks the pinned source bytes, historical export
 hashes, rejection diagnostics, and agreement between verification stages.
 Timeouts and process failures are errors. They do not count as rejections.
+The wrapper sets BEND_NO_TELEMETRY=1 to disable unrelated update notices.
 
 To rerun, choose a new output directory:
 
